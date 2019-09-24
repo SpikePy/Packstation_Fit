@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Packstation Calculator</title>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+  <link rel="icon" href="favicon.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body onload="determine()">
+  <h1 ><img src="favicon.png">Packstation Calculator</h1>
+  <div>
+    <table>
+      <tr>
+        <td>Dimension 1: </td>
+        <td><input  type="number" id="dimension_1" size="5" oninput="determine()"></td>
+        <td><unit>cm</unit></td>
+      </tr>
+      <tr>
+        <td>Dimension 2: </td>
+        <td><input  type="number" id="dimension_2" size="5" oninput="determine()"></td>
+        <td><unit>cm</unit></td>
+      </tr>
+      <tr>
+        <td>Dimension 3: </td>
+        <td><input  type="number" id="dimension_3" size="5" oninput="determine()"></td>
+        <td><unit>cm</unit></td>
+      </tr>
+      <tr>
+        <td>Result: </td>
+        <td><input id="result" size="5" disabled></td>
+      </tr>
+    </table>
+  </div>
+</body>
+</html>

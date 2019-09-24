@@ -1,0 +1,74 @@
+body {
+    font-size: 1.7em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1 {
+    font-size: 2.5em;
+    text-align: center;
+    padding: 3%;
+}
+h1 > img {
+  width: 1.5em;
+  vertical-align: middle;
+  padding: .3em;
+}
+
+div {
+  margin: 0 auto 0;
+  text-align: center;
+}
+
+input {
+  display: block;
+  font-size: 1.5em;
+  border-radius: .3em;
+  border: 0;
+  padding: .5em;
+  /* margin: .5em auto; */
+  text-align: right;
+  background-color: rgb(240, 240, 240);
+  -moz-appearance: textfield;
+  transition: background-color .5s ease;
+  width: 4em;
+}
+input:hover {
+    background-color: rgb(220, 220, 220);
+}
+#result {
+  color: black;
+}
+#result:hover {
+    background-color: rgb(240, 240, 240);
+}
+
+table {
+  margin: 0 auto 0;
+}
+
+td {
+  padding: .2em;
+  text-align:right;
+}
+
+button {
+  display: block;
+  font-size: 1.5em;
+  border: 0;
+  border-radius: .3em;
+  padding: .5em;
+  /* margin: .5em auto; */
+  transition: background-color .5s ease;
+  background-color: rgb(220, 235, 220);
+  width: 100%;
+}
+button:hover {
+    /* background-color: rgb(220, 220, 220); */
+}
+button:active {
+    transition: background-color 0s;
+    background-color: rgb(220, 245, 220);
+}
+button:disabled {
+    background-color: rgb(235, 220, 220);
+}
