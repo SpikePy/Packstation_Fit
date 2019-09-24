@@ -7,6 +7,10 @@ width  = 35
 depth  = 60
 height = [8, 18, 37, 65]
 
+// Define Colors
+color_fail    = "rgb(235, 220, 220)"
+color_success = "rgb(220, 245, 220)"
+
 // Sort dimensions by size
 slot_s  = [width, depth, height[0]].sort(function(a, b){return a-b})
 slot_m  = [width, depth, height[1]].sort(function(a, b){return a-b})
@@ -22,6 +26,7 @@ function determine() {
 
   if (isNaN(dimension_1) || isNaN(dimension_2) || isNaN(dimension_3) )
   {
+    result.style.backgroundColor = color_fail
     text = 'Insert Dimensions'
     result.value = text
     result.title = text
@@ -46,13 +51,7 @@ function determine() {
         // slot_result = 'Package does not fit into Packstation!'
       }
 
-    result.style.backgroundColor = "rgb(220, 220, 220)"
+    result.style.backgroundColor = color_success
     result.value = slot_result
-    // result.title = slot_result
-    // Make result cell blink once for 200ms
-    setTimeout(() => {
-      result.style.backgroundColor = "rgb(240, 240, 240)"
-    }, 200);
-
   }
 }
