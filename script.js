@@ -22,7 +22,9 @@ function determine() {
 
   if (isNaN(dimension_1) || isNaN(dimension_2) || isNaN(dimension_3) )
   {
-    result.value = 'Insert Package Dimensions'
+    text = 'Insert Dimensions'
+    result.value = text
+    result.title = text
   }
   else
   {
@@ -46,6 +48,7 @@ function determine() {
 
     result.style.backgroundColor = "rgb(220, 220, 220)"
     result.value = slot_result
+    // result.title = slot_result
     // Make result cell blink once for 200ms
     setTimeout(() => {
       result.style.backgroundColor = "rgb(240, 240, 240)"
