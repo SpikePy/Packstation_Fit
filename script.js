@@ -35,24 +35,25 @@ function determine() {
   {
     switch (true) {
       case dimensions[0] <= slot_s[0] && dimensions[1] <= slot_s[1] && dimensions[2] <= slot_s[2]:
-        slot_result = 'S'
+        result.value = 'S'
+        result.style.backgroundColor = color_success
         break;
       case dimensions[0] <= slot_m[0] && dimensions[1] <= slot_m[1] && dimensions[2] <= slot_m[2]:
-        slot_result = 'M'
+        result.value = 'M'
+        result.style.backgroundColor = color_success
         break;
       case dimensions[0] <= slot_l[0] && dimensions[1] <= slot_l[1] && dimensions[2] <= slot_l[2]:
-        slot_result = 'L'
+        result.value = 'L'
+        result.style.backgroundColor = color_success
         break;
       case dimensions[0] <= slot_xl[0] && dimensions[1] <= slot_xl[1] && dimensions[2] <= slot_xl[2]:
-        slot_result = 'XL'
+        result.value = 'XL'
+        result.style.backgroundColor = color_success
         break;
       default:
         result.style.backgroundColor = color_fail
-        slot_result = 'To Big'
+        result.value = 'To Big'
         // slot_result = 'Package does not fit into Packstation!'
       }
-
-    result.style.backgroundColor = color_success
-    result.value = slot_result
   }
 }
