@@ -47,6 +47,7 @@ function determine() {
         slot_result = 'XL'
         break;
       default:
+        result.style.backgroundColor = color_fail
         slot_result = 'To Big'
         // slot_result = 'Package does not fit into Packstation!'
       }
