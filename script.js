@@ -1,30 +1,30 @@
-var dimension_1
-var dimension_2
-var dimension_3
+var package_height
+var package_width
+var package_depth
 
 // Define slot dimensions
-width  = 35
-depth  = 60
-height = [8, 18, 37, 65]
+slot_height = [8, 18, 37, 65]
+slot_width  = 35
+slot_depth  = 60
 
 // Define Colors
 color_fail    = "rgb(235, 220, 220)"
 color_success = "rgb(220, 245, 220)"
 
 // Sort dimensions by size
-slot_s  = [width, depth, height[0]].sort(function(a, b){return a-b})
-slot_m  = [width, depth, height[1]].sort(function(a, b){return a-b})
-slot_l  = [width, depth, height[2]].sort(function(a, b){return a-b})
-slot_xl = [width, depth, height[3]].sort(function(a, b){return a-b})
+slot_s  = [slot_width, slot_depth, slot_height[0]].sort(function(a, b){return a-b})
+slot_m  = [slot_width, slot_depth, slot_height[1]].sort(function(a, b){return a-b})
+slot_l  = [slot_width, slot_depth, slot_height[2]].sort(function(a, b){return a-b})
+slot_xl = [slot_width, slot_depth, slot_height[3]].sort(function(a, b){return a-b})
 
 function determine() {
-  dimension_1 = parseInt(document.getElementById("dimension_1").value)
-  dimension_2 = parseInt(document.getElementById("dimension_2").value)
-  dimension_3 = parseInt(document.getElementById("dimension_3").value)
+  package_height = parseInt(document.getElementById("package_height").value)
+  package_width = parseInt(document.getElementById("package_width").value)
+  package_depth = parseInt(document.getElementById("package_depth").value)
 
-  dimensions = [dimension_1, dimension_2, dimension_3].sort(function(a, b){return a-b})
+  dimensions = [package_height, package_width, package_depth].sort(function(a, b){return a-b})
 
-  if (isNaN(dimension_1) || isNaN(dimension_2) || isNaN(dimension_3) )
+  if (isNaN(package_height) || isNaN(package_width) || isNaN(package_depth) )
   {
     result.style.backgroundColor = color_fail
     text = 'Insert Dimensions'
