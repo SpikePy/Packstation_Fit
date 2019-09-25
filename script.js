@@ -19,8 +19,8 @@ slot_xl = [slot_width, slot_depth, slot_height[3]].sort(function(a, b){return a-
 
 function determine() {
   package_height = parseInt(document.getElementById("package_height").value)
-  package_width = parseInt(document.getElementById("package_width").value)
-  package_depth = parseInt(document.getElementById("package_depth").value)
+  package_width  = parseInt(document.getElementById("package_width").value)
+  package_depth  = parseInt(document.getElementById("package_depth").value)
 
   dimensions = [package_height, package_width, package_depth].sort(function(a, b){return a-b})
 
